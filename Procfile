@@ -1,0 +1,1 @@
+worker: python djangoProject5.py
