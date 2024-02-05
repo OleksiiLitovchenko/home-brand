@@ -1,0 +1,25 @@
+{% for item in portfolioes %}
+<div class="modal fade text-center portfolio-modal" role="dialog" tabindex="-1" id="{{item.id}}">
+
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="text-muted item-intro">Lorem ipsum dolor sit amet consectetur.</p><img class="img-fluid d-block mx-auto" src="{{item.photo.url}}">
+                                <p>{{ item.descr }}</p>
+                                <ul class="list-unstyled">
+                                    <li>Date: {{item.date}}</li>
+                                    <li>Client:{{ item.name }}</li>
+                                    <li>Category: Illustration</li>
+                                </ul><button class="btn btn-primary" type="button" data-bs-dismiss="modal"><i class="fa fa-times"></i><span>&nbsp;Close Project</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   {% endfor %}

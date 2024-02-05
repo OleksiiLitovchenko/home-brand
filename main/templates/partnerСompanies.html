@@ -1,0 +1,10 @@
+<section class="py-5">
+        <div class="container">
+            <div class="row">
+                {% for item in partntrs %}
+                    <div class="col-sm-6 col-md-3"><a href="{{item.url}}"><img class="img-fluid d-block mx-auto" src="{{ item.photo.url }}"></a></div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
